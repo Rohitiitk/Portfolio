@@ -113,9 +113,9 @@ header nav {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 145px;
+  height: 155px;
+  border-radius: 60%;
   border: 4px solid var(--accent);
   box-shadow: var(--shadow);
   margin-bottom: 1.2rem;
