@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rohit Raj — Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">Rohit Raj</div>
+            <ul id="nav-list" class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleNav()">☰</div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <img src="images/profile.jpg" alt="Rohit Raj — profile" class="profile-img" />
+            <div class="hero-text">
+                <h1>Rohit Raj</h1>
+                <p class="subtitle">Senior Undergraduate — Mathematics &amp; Scientific Computing, IIT Kanpur</p>
+                <p class="meta">Minors: Computer Systems &amp; Machine Learning</p>
+                <div class="contact-quick">
+                    <a href="mailto:rohitraj21@iitk.ac.in">rohitraj21@iitk.ac.in</a> •
+                    <a href="tel:+917667173914">+91 76671 73914</a> •
+                    <a href="https://github.com/Rohitiitk" target="_blank" rel="noreferrer">GitHub</a> •
+                    <a href="https://www.linkedin.com/in/rohit-raj-a6b454227/" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+                <a class="btn" href="#contact">Let's connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <h2>About</h2>
+        <p>
+            I am an undergraduate student at IIT Kanpur studying Mathematics &amp; Scientific Computing with minors in Computer Systems and Machine Learning.
+            I build performant software and research-informed ML systems — from low-level performance kernels to full-stack AI-powered webapps and blockchain experiments.
+            My interests include high-performance programming, systems-level optimization, machine learning, and building practical AI/ML products.
+        </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+            <h3>Software Engineering Intern — Outer Orbit Technologies</h3>
+            <span class="meta">May 2025 — Jul 2025</span>
+            <ul>
+                <li>Developed a full-stack log viewer (Python + React) providing livestreamed application logs and fast-search capabilities.</li>
+                <li>Containerized the app with Docker for consistent deployments across environments.</li>
+                <li>Implemented live-search and custom alerting features that reduced average bug-discovery time by over 90%.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <h2>Selected Projects</h2>
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>MyGate — AI-Powered Community Management System</h3>
+                <p>
+                    Built a full-stack visitor management platform with an AI copilot using OpenAI function calling, Firestore realtime updates and role-based access control.
+                    Implemented secure RBAC with Firebase custom claims, server-side validation for AI operations, immutable audit logging and FCM push notifications.
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/Mygate-community-app" target="_blank" rel="noreferrer">Repo — Mygate-community-app</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Programming for Performance</h3>
+                <p>
+                    Vectorized matrix multiplication with SSE4/AVX2 intrinsics (7.2× speedup), optimized loops (2.3×), implemented CUDA kernels for convolution (1520× / 3264×),
+                    and developed concurrent data structures for high-performance workloads.
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/Programming_For_performance" target="_blank" rel="noreferrer">Repo — Programming_For_performance</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Uncovering the Mask of XORRO</h3>
+                <p>
+                    Analyzed XORRO PUF vulnerability with a mathematically derived feature vector and linear model attacks — achieved 99.82% train &amp; 99.2% test accuracy using LinearSVC (L1).
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/Uncovering-the-Mask-of-XORRO" target="_blank" rel="noreferrer">Repo — Uncovering-the-Mask-of-XORRO</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Playing with The Melbot</h3>
+                <p>
+                    Built a decision tree-based solver to guess secret words with optimal query selection achieving 100% accuracy within 4 trials on average.
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/Playing-With-TheMelbot" target="_blank" rel="noreferrer">Repo — Playing-With-TheMelbot</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Decentralised Certification (DApp)</h3>
+                <p>
+                    Designed and deployed an Ethereum DApp using Solidity (ERC-721) to issue tamper-proof certificates as NFTs for verifiable credentials.
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/certificate-issuance-on-etherium" target="_blank" rel="noreferrer">Repo — certificate-issuance-on-etherium</a>
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Reinforcement Learning Quest</h3>
+                <p>
+                    Implemented SARSA, Q-Learning and policy-gradient variants for benchmark environments (cliff walking, cart-pole) and compared learning behaviours experimentally.
+                </p>
+                <p>
+                    <a href="https://github.com/Rohitiitk/Introduction-to-Reinforcement-learning" target="_blank" rel="noreferrer">Repo — Introduction-to-Reinforcement-learning</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS & COURSES -->
+    <section id="skills" class="section skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li>Languages: C, C++, Python, Java, R, Solidity</li>
+            <li>Frameworks &amp; Tools: Spring Boot, FastAPI, Django, Docker</li>
+            <li>ML &amp; Libraries: PyTorch, NumPy, Pandas, scikit-learn, OpenCV</li>
+            <li>Build &amp; CI: Make, CMake, npm, GitHub Actions</li>
+            <li>Systems: Linux/Unix shell, Bash scripting</li>
+        </ul>
+
+        <h3>Relevant Courses</h3>
+        <p>Probability &amp; Statistics, Data Structures &amp; Algorithms, Programming for Performance, Intro to ML, Reinforcement Learning, MCMC, Embedded &amp; Cyber-Physical Systems, Modern AI &amp; Generative AI</p>
+    </section>
+
+    <!-- ACADEMICS -->
+    <section id="academics" class="section academics">
+        <h2>Academic Summary</h2>
+        <p><strong>Indian Institute of Technology Kanpur</strong> — B.S., Mathematics &amp; Scientific Computing (2021–2025). CPI: 5.8/10</p>
+        <p><strong>Senior Secondary</strong> — S.N.S. College, Gaya. XII (BSEB) — 80.6%</p>
+        <p><strong>Secondary</strong> — R.D. Public School, Gaya. X (CBSE) — 94.4%</p>
+
+        <h3>Scholastic Highlights</h3>
+        <ul>
+            <li>All India Rank 2701 in JEE Advanced (2021).</li>
+            <li>All India Rank 1098 in JEE Mains (2021).</li>
+            <li>Reached Gold Level in WorldQuant Challenge; offered a quantitative research consultant role.</li>
+        </ul>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section leadership">
+        <h2>Leadership &amp; Activities</h2>
+        <ul>
+            <li><strong>Organiser — Marketing, Udghosh’23 (IIT Kanpur)</strong> — Led a 3-tier team (20+ senior, 40+ junior executives) for campus ambassador programs and sponsor outreach.</li>
+            <li><strong>Secretary — Table Tennis, Games &amp; Sports Council</strong> — Organized intra/inter-college competitions boosting participation.</li>
+        </ul>
+    </section>
+
+    <!-- RESUME / CONTACT -->
+    <section id="contact" class="section contact">
+        <h2>Contact &amp; Resume</h2>
+        <p>Email: <a href="mailto:rohitraj21@iitk.ac.in">rohitraj21@iitk.ac.in</a></p>
+        <p>Phone: <a href="tel:+917667173914">+91 76671 73914</a></p>
+        <p>
+            <a class="btn" href="resume.pdf" download="Rohit_Raj_Resume.pdf">Download Resume (PDF)</a>
+        </p>
+
+        <form action="https://formsubmit.co/rohitraj21@iitk.ac.in" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Rohit Raj. All rights reserved.</p>
+        <p class="small">Content on this page updated from the resume you uploaded.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
