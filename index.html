@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Rohit Raj — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -41,6 +43,19 @@
         </div>
     </section>
 
+    <!-- RESUME (Moved to top) -->
+    <section id="resume" class="section resume">
+        <h2><i class="fa-solid fa-file-pdf"></i> Resume</h2>
+        <p style="text-align:center;">
+            <a class="btn" href="resume.pdf" download="Rohit_Raj_Resume.pdf">
+                <i class="fa-solid fa-download"></i> Download Resume (PDF)
+            </a>
+        </p>
+        <div class="resume-preview">
+            <iframe src="resume.pdf" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+    </section>
+
     <!-- ABOUT -->
     <section id="about" class="section about">
         <h2>About</h2>
@@ -54,7 +69,6 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section experience">
         <h2>Work Experience</h2>
-
         <div class="job">
             <h3>Software Engineering Intern — Outer Orbit Technologies</h3>
             <span class="meta">May 2025 — Jul 2025</span>
@@ -70,131 +84,57 @@
     <section id="projects" class="section projects">
         <h2>Selected Projects</h2>
         <div class="projects-container">
-
             <div class="project-card">
                 <h3>MyGate — AI-Powered Community Management System</h3>
-                <p>
-                    Built a full-stack visitor management platform with an AI copilot using OpenAI function calling, Firestore realtime updates and role-based access control.
-                    Implemented secure RBAC with Firebase custom claims, server-side validation for AI operations, immutable audit logging and FCM push notifications.
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/Mygate-community-app" target="_blank" rel="noreferrer">Repo — Mygate-community-app</a>
-                </p>
+                <p>Built a full-stack visitor management platform with an AI copilot using OpenAI function calling, Firestore realtime updates and role-based access control.</p>
+                <p><a href="https://github.com/Rohitiitk/Mygate-community-app" target="_blank">Repo — Mygate-community-app</a></p>
             </div>
 
             <div class="project-card">
                 <h3>Programming for Performance</h3>
-                <p>
-                    Vectorized matrix multiplication with SSE4/AVX2 intrinsics (7.2× speedup), optimized loops (2.3×), implemented CUDA kernels for convolution (1520× / 3264×),
-                    and developed concurrent data structures for high-performance workloads.
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/Programming_For_performance" target="_blank" rel="noreferrer">Repo — Programming_For_performance</a>
-                </p>
+                <p>Optimized computation-heavy tasks via AVX2 vectorization and CUDA kernels, achieving 7×–3000× performance gains.</p>
+                <p><a href="https://github.com/Rohitiitk/Programming_For_performance" target="_blank">Repo — Programming_For_performance</a></p>
             </div>
 
             <div class="project-card">
                 <h3>Uncovering the Mask of XORRO</h3>
-                <p>
-                    Analyzed XORRO PUF vulnerability with a mathematically derived feature vector and linear model attacks — achieved 99.82% train &amp; 99.2% test accuracy using LinearSVC (L1).
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/Uncovering-the-Mask-of-XORRO" target="_blank" rel="noreferrer">Repo — Uncovering-the-Mask-of-XORRO</a>
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Playing with The Melbot</h3>
-                <p>
-                    Built a decision tree-based solver to guess secret words with optimal query selection achieving 100% accuracy within 4 trials on average.
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/Playing-With-TheMelbot" target="_blank" rel="noreferrer">Repo — Playing-With-TheMelbot</a>
-                </p>
+                <p>Analyzed XORRO PUF vulnerability via feature engineering and linear model attacks — achieved 99.2% test accuracy.</p>
+                <p><a href="https://github.com/Rohitiitk/Uncovering-the-Mask-of-XORRO" target="_blank">Repo — Uncovering-the-Mask-of-XORRO</a></p>
             </div>
 
             <div class="project-card">
                 <h3>Decentralised Certification (DApp)</h3>
-                <p>
-                    Designed and deployed an Ethereum DApp using Solidity (ERC-721) to issue tamper-proof certificates as NFTs for verifiable credentials.
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/certificate-issuance-on-etherium" target="_blank" rel="noreferrer">Repo — certificate-issuance-on-etherium</a>
-                </p>
+                <p>Designed and deployed a Solidity-based NFT system for tamper-proof academic certificate verification.</p>
+                <p><a href="https://github.com/Rohitiitk/certificate-issuance-on-etherium" target="_blank">Repo — certificate-issuance-on-etherium</a></p>
             </div>
-
-            <div class="project-card">
-                <h3>Reinforcement Learning Quest</h3>
-                <p>
-                    Implemented SARSA, Q-Learning and policy-gradient variants for benchmark environments (cliff walking, cart-pole) and compared learning behaviours experimentally.
-                </p>
-                <p>
-                    <a href="https://github.com/Rohitiitk/Introduction-to-Reinforcement-learning" target="_blank" rel="noreferrer">Repo — Introduction-to-Reinforcement-learning</a>
-                </p>
-            </div>
-
         </div>
     </section>
 
-    <!-- SKILLS & COURSES -->
+    <!-- SKILLS -->
     <section id="skills" class="section skills">
         <h2>Technical Skills</h2>
         <ul class="skills-list">
-            <li>Languages: C, C++, Python, Java, R, Solidity</li>
-            <li>Frameworks &amp; Tools: Spring Boot, FastAPI, Django, Docker</li>
-            <li>ML &amp; Libraries: PyTorch, NumPy, Pandas, scikit-learn, OpenCV</li>
-            <li>Build &amp; CI: Make, CMake, npm, GitHub Actions</li>
-            <li>Systems: Linux/Unix shell, Bash scripting</li>
-        </ul>
-
-        <h3>Relevant Courses</h3>
-        <p>Probability &amp; Statistics, Data Structures &amp; Algorithms, Programming for Performance, Intro to ML, Reinforcement Learning, MCMC, Embedded &amp; Cyber-Physical Systems, Modern AI &amp; Generative AI</p>
-    </section>
-
-    <!-- ACADEMICS -->
-    <!-- <section id="academics" class="section academics">
-        <h2>Academic Summary</h2>
-        <p><strong>Indian Institute of Technology Kanpur</strong> — B.S., Mathematics &amp; Scientific Computing (2021–2025). CPI: 7.1/10</p>
-        <p><strong>Senior Secondary</strong> — S.N.S. College, Gaya. XII (BSEB) — 80.6%</p>
-        <p><strong>Secondary</strong> — R.D. Public School, Gaya. X (CBSE) — 94.4%</p>
-
-        <h3>Scholastic Highlights</h3>
-        <ul>
-            <li>All India Rank 2701 in JEE Advanced (2021).</li>
-            <li>All India Rank 1098 in JEE Mains (2021).</li>
-            <li>Reached Gold Level in WorldQuant Challenge; offered a quantitative research consultant role.</li>
-        </ul>
-    </section> -->
-
-    <!-- LEADERSHIP -->
-    <section id="leadership" class="section leadership">
-        <h2>Leadership &amp; Activities</h2>
-        <ul>
-            <li><strong>Organiser — Marketing, Udghosh’23 (IIT Kanpur)</strong> — Led a 3-tier team (20+ senior, 40+ junior executives) for campus ambassador programs and sponsor outreach.</li>
-            <li><strong>Secretary — Table Tennis, Games &amp; Sports Council</strong> — Organized intra/inter-college competitions boosting participation.</li>
+            <li>C</li><li>C++</li><li>Python</li><li>Java</li><li>R</li><li>Solidity</li>
+            <li>FastAPI</li><li>Django</li><li>Docker</li><li>PyTorch</li><li>NumPy</li><li>Pandas</li>
+            <li>scikit-learn</li><li>OpenCV</li><li>GitHub Actions</li><li>Bash</li>
         </ul>
     </section>
 
-    <!-- RESUME / CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="section contact">
-        <h2>Contact &amp; Resume</h2>
+        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
         <p>Email: <a href="mailto:rohitraj21@iitk.ac.in">rohitraj21@iitk.ac.in</a></p>
         <p>Phone: <a href="tel:+917667173914">+91 76671 73914</a></p>
-        <p>
-            <a class="btn" href="resume.pdf" download="Rohit_Raj_Resume.pdf">Download Resume (PDF)</a>
-        </p>
-
         <form action="https://formsubmit.co/rohitraj21@iitk.ac.in" method="POST" class="contact-form">
             <input type="text" name="name" placeholder="Your name" required />
             <input type="email" name="email" placeholder="Your email" required />
             <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
+            <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send</button>
         </form>
     </section>
 
     <footer class="footer">
         <p>&copy; 2025 Rohit Raj. All rights reserved.</p>
-        <p class="small">Content on this page updated from the resume you uploaded.</p>
     </footer>
 
     <script src="script.js"></script>
